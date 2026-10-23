@@ -16,13 +16,21 @@ function App() {
     return guardados ? JSON.parse(guardados) : []
   })
 
-  // Los usuarios viven aquí (en el componente superior) para que no se pierdan al cambiar de ruta
-  const [usuarios, setUsuarios] = useState([])
+// Igual que los favoritos: se leen de localStorage al iniciar
+const [usuarios, setUsuarios] = useState(() => {
+  const guardados = localStorage.getItem('usuarios')
+  return guardados ? JSON.parse(guardados) : []
+})
 
   // Cada vez que cambian los favoritos, se guardan en localStorage
   useEffect(() => {
     localStorage.setItem('favoritos', JSON.stringify(favoritos))
   }, [favoritos])
+
+  // Cada vez que cambia la lista de usuarios, se guarda en localStorage
+useEffect(() => {
+  localStorage.setItem('usuarios', JSON.stringify(usuarios))
+}, [usuarios])
 
   // Si el personaje ya es favorito lo quita, si no lo agrega
   function alternarFavorito(personaje) {

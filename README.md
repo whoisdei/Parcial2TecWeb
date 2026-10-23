@@ -42,8 +42,5 @@ npm run dev
 ### Registro de usuarios
 ![Registro](capturas/registro.png)
 
-### Vista en celular
-![Celular](capturas/movil.png)
-
 ## Integrantes
 - David Daniel Yepes

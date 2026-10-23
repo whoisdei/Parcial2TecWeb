@@ -14,10 +14,9 @@ guardarlos como favoritos y gestionar un registro de usuarios.
 
 ## Funcionalidades
 - Listado con buscador por nombre, filtro por casa y botón "Cargar más"
-- Detalle de cada personaje
+- Detalle de cada personaje (ruta `/detalle/:id`)
 - Favoritos guardados en localStorage
 - Registro de usuarios (crear, listar, editar y eliminar) con validaciones
-- Registro de usuarios guardados en localStorage
 - Página 404 y diseño responsivo
 
 ## Cómo ejecutarla
@@ -42,6 +41,9 @@ npm run dev
 
 ### Registro de usuarios
 ![Registro](capturas/registro.png)
+
+### Vista en celular
+![Celular](capturas/movil.png)
 
 ## Integrantes
 - David Daniel Yepes

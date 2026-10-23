@@ -14,7 +14,7 @@ guardarlos como favoritos y gestionar un registro de usuarios.
 
 ## Funcionalidades
 - Listado con buscador por nombre, filtro por casa y botón "Cargar más"
-- Detalle de cada personaje (ruta `/detalle/:id`)
+- Detalle de cada personaje
 - Favoritos guardados en localStorage
 - Registro de usuarios (crear, listar, editar y eliminar) con validaciones
 - Registro de usuarios guardados en localStorage
